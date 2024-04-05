@@ -8,7 +8,7 @@
         },
         {
             "src": "build_files.sh",
-            "sue": "@vercesl/static-build",
+            "use": "@vercesl/static-build",
             "config": {
                 "distDir": "staticfiles_build"
             }
