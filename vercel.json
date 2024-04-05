@@ -3,7 +3,7 @@
     "builds": [
         {
             "src": "moribo/wsgi.py",
-            "use": "@vercesl/python",
+            "use": "@vercel/python",
             "config": {"maxLambdaSize": "15mb", "runtimed": "python3.9"}
         },
         {
