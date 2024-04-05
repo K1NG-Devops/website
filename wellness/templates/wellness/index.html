@@ -1,0 +1,161 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness</title>
+    <link rel="stylesheet" href="{% static 'wellness/css/style.css' %}">
+            
+        
+        <style>
+        .navbar {
+            background-color: #f2f2f2;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-item {
+            margin-right: 20px;
+        }
+
+        .navbar-button {
+            margin-right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .navbar-button:hover {
+            background-color: #45a049;
+        }
+            .hero {
+                background-color: #f2f2f2;
+                padding: 50px;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+
+            .hero p {
+                font-size: 18px;
+                color: #666;
+            }
+
+            .info {
+                background-color: #fff;
+                padding: 50px;
+                text-align: center;
+            }
+
+            .info h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            .info p {
+                font-size: 16px;
+                color: #666;
+            }
+
+            .footer {
+                background-color: #f2f2f2;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .footer-content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .social-media-links {
+                list-style: none;
+                display: flex;
+                margin: 0;
+                padding: 0;
+            }
+
+            .social-media-link {
+                margin-right: 10px;
+            }
+
+            .whatsapp-button {
+                background-color: #25D366;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .whatsapp-button:hover {
+                background-color: #128C7E;
+            }
+
+            .moribo {
+                text-align: center;
+                margin-top: 20px;
+            }
+        </style>
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-center">
+            <ul class="navbar-links">
+                <li class="navbar-item">Home</li>
+                <li class="navbar-item">About</li>
+                <li class="navbar-item">Services</li>
+                <li class="navbar-item">Contact</li>
+            </ul>
+        </div>
+        <button class="navbar-button">Get Started</button>
+    </div>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to our Wellness Website</h1>
+            <p>Discover a healthier and happier you</p>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="info-content">
+            <h2>What We Do</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nunc id aliquam lacinia, nisl justo lacinia nunc, id lacinia nunc nisl id nunc.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <ul class="social-media-links">
+                <li class="social-media-link">Facebook</li>
+                <li class="social-media-link">Twitter</li>
+                <li class="social-media-link">Instagram</li>
+            </ul>
+            <button class="whatsapp-button">WhatsApp</button>
+        </div>
+    </footer>
+
+    <div class="moribo">
+        <p>(c) Moribo 2020</p>
+    </div>
+</body>
+</html>

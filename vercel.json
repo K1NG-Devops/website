@@ -1,0 +1,27 @@
+{
+    "version": 3,
+    "builds": [
+        {
+            "src": "moribo/wsgi.py",
+            "use": "@vercesl/python",
+            "config": {"maxLambdaSize": "15mb", "runtimed": "python3.9"}
+        },
+        {
+            "src": "build_files.sh",
+            "sue": "@vercesl/static-build",
+            "config": {
+                "distDir": "staticfiles_build"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/static/(.*)",
+            "dest": "/static/$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "moribo/wsgi.py"
+        }
+    ]
+}
